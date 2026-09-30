@@ -1,0 +1,41 @@
+<% layout("/layout/boilderplate") %>;
+    <h3>Create a New Listing</h3>
+    <div class="row">
+        <div class="col-8 offset-2">
+    <form method="POST" action="/listings">
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input name="listing[title]" placeholder="write a title" type="text"  class="form-control">
+        </div>
+        
+        <div class="mb-3">
+            <label for="description" class="form-label">write a description</label>
+            <textarea name="listing[description]" placeholder="write a description" class="form-control" ></textarea>
+        </div>
+        
+        <div class="mb-3">
+            <label for="image" class="form-label">write a URL of image</label>
+            <input name="listing[image]" placeholder="write a image url" type="text" class="form-control">
+        </div>
+        
+        <div class="row ">
+        <div class="mb-3 col-md-4">
+            <label for="image" class="form-label"> price </label>
+            <input name="listing[price]" placeholder="write a price of product" type="number" class="form-control">
+        </div>
+        
+        <div class="mb-3 col-md-8">
+            <label for="country" class="form-label">Country</label>
+            <input name="listing[country]" placeholder="write a name of country" type="text" class="form-control">
+        </div>
+        </div>
+        
+        <div class="mb-3">
+            <label for="location" class="form-label">location</label>
+            <input name="listing[location]" placeholder="write a location" type="text" class="form-control">
+        </div>
+        <br/><br>
+        <button class="btn btn-dark add-btn">add</button>
+        <br><br>
+        </div>
+    </div>
